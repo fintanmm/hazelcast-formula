@@ -1,5 +1,5 @@
 ================
-template-formula
+hazelcast-formula
 ================
 
 A saltstack formula that is empty. It has dummy content to help with a quick
@@ -16,7 +16,7 @@ Available states
 .. contents::
     :local:
 
-``template``
+``hazelcast``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs the hazelcast package, and starts the associated hazelcast service.

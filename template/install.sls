@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "hazelcast/map.jinja" import hazelcast with context %}
 
-template-pkg:
+hazelcast-pkg:
   pkg.installed:
-    - name: {{ template.pkg }}
+    - name: {{ hazelcast.pkg }}

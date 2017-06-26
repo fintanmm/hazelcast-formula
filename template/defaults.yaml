@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
-template:
-  pkg: template
-  config: '/etc/template'
+hazelcast:
+  pkg: hazelcast
+  config: '/etc/hazelcast'
   service:
-    name: template
+    name: hazelcast

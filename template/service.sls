@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "hazelcast/map.jinja" import hazelcast with context %}
 
-template-name:
+hazelcast-name:
   service.running:
-    - name: {{ template.service.name }}
+    - name: {{ hazelcast.service.name }}
     - enable: True

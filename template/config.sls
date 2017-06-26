@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "hazelcast/map.jinja" import hazelcast with context %}
 
-template-config:
+hazelcast-config:
   file.managed:
-    - name: {{ template.config }}
-    - source: salt://template/files/example.tmpl
+    - name: {{ hazelcast.config }}
+    - source: salt://hazelcast/files/example.tmpl
     - mode: 644
     - user: root
     - group: root
