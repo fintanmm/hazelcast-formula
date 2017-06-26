@@ -2,8 +2,7 @@
 hazelcast-formula
 ================
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
+A saltstack formula for deploying hazelcast. An Open Source In-Memory Data Grid.
 
 .. note::
 
