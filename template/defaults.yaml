@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 hazelcast:
-  pkg: hazelcast
+  version: '3.8.2'
+  pkg_url: http://download.hazelcast.com/download.jsp?version=hazelcast-3.8.2&type=tar&p=
   config: '/etc/hazelcast'
   service:
     name: hazelcast
