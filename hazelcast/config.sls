@@ -3,10 +3,15 @@
 
 {% from "hazelcast/map.jinja" import hazelcast with context %}
 
-hazelcast-config:
+{{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}/bin/hazelcast.xml:
   file.managed:
-    - name: {{ hazelcast.config }}
-    - source: salt://hazelcast/files/example.tmpl
+    - source: salt://hazelcast/files/hazelcast.xml
     - mode: 644
     - user: root
     - group: root
+    - defaults:
+        name: {{ hazelcast.name }}
+        password: {{ hazelcast.password }}
+        management_url: {{ hazelcast.management_url }}
+        port: {{ hazelcast.port }}
+
