@@ -1,3 +1,19 @@
 hazelcast:
   home: /opt/
   lookup: {master: hazelcast-master}
+supervisor:
+  programs:
+    hazelcast:
+      autorestart: 'true'
+      autostart: 'true'
+      redirect_stderr: 'true'
+      startsecs: '5'
+      stdout_logfile_maxbytes: '25MB'
+      stderr_logfile_maxbytes: '25MB'
+      stdout_logfile_backups: '5'
+      command:  ./start.sh
+      user: 'nobody'
+      startretries: '10'
+      directory: "{{ salt['pillar.get']('hazelcast.home') }}/hazelcast-{{ salt['pillar.get']('hazelcast.version') }}/bin"
+      stdout_logfile: '/var/log/hazelcast.log'
+      environment: ''  
