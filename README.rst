@@ -3,6 +3,7 @@ hazelcast-formula
 ================
 
 A saltstack formula for deploying hazelcast. An Open Source In-Memory Data Grid.
+Depends on java and supervisord.
 
 .. note::
 
