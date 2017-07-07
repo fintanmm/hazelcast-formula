@@ -8,6 +8,7 @@ hazelcast:
   port: 5701
   user: nobody
   group: nobody
+  use_supervisor: true
   lookup: {master: hazelcast-master}
 
 supervisor:
