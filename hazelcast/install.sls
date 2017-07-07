@@ -5,9 +5,9 @@
 
 extract_hazelcast:
   archive.extracted:
-    - name: {{ hazelcast.home }}/hazelcast-{[ hazelcast.version }
+    - name: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
     - source: {{ hazelcast.pkg_url }}
     - source_hash: {{ hazelcast.hash }}
     - user: nobody
     - group: nobody
-    - if_missing: {{ hazelcast.home }}/hazelcast-{[ hazelcast.version }
+    - if_missing: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
