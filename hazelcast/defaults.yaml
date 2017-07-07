@@ -7,5 +7,7 @@ hazelcast:
   password: NQmdgfeYYq1FfSQWR6
   management_url: 'http://localhost:8080/mancenter'
   port: 5701
+  user: nobody
+  group: nobody
   service:
     name: hazelcast

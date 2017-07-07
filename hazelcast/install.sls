@@ -8,6 +8,6 @@ extract_hazelcast:
     - name: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
     - source: {{ hazelcast.pkg_url }}
     - source_hash: {{ hazelcast.hash }}
-    - user: nobody
-    - group: nobody
+    - user: {{ hazelcast.user }}
+    - group: {{ hazelcast.group }}
     - if_missing: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
