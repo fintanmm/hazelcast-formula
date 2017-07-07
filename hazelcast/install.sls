@@ -3,10 +3,11 @@
 
 {% from "hazelcast/map.jinja" import hazelcast with context %}
 
-{{ hazelcast.home }}:
-  file.managed:
+extract_hazelcast:
+  archive.extracted:
+    - name: {{ hazelcast.home }}/hazelcast-{[ hazelcast.version }
     - source: {{ hazelcast.pkg_url }}
     - source_hash: {{ hazelcast.hash }}
-    - user: root
-    - group: root
-    - mode: 644
+    - user: nobody
+    - group: nobody
+    - if_missing: {{ hazelcast.home }}/hazelcast-{[ hazelcast.version }
