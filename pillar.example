@@ -1,5 +1,11 @@
 hazelcast:
   home: /opt/
+  version: '3.8.2'
+  pkg_url: http://download.hazelcast.com/download.jsp?version=hazelcast-3.8.2&type=tar&p=
+  name: 'hazelcast'
+  password: NQmdgfeYYq1FfSQWR6
+  management_url: 'http://localhost:8080/mancenter'
+  port: 5701
   lookup: {master: hazelcast-master}
 supervisor:
   programs:
