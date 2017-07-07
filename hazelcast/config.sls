@@ -14,4 +14,3 @@
         password: {{ hazelcast.password }}
         management_url: {{ hazelcast.management_url }}
         port: {{ hazelcast.port }}
-
