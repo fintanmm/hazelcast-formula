@@ -7,8 +7,8 @@
   file.managed:
     - source: salt://hazelcast/files/hazelcast.xml
     - mode: 644
-    - user: root
-    - group: root
+    - user: nobody
+    - group: nobody
     - defaults:
         name: {{ hazelcast.name }}
         password: {{ hazelcast.password }}
