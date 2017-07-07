@@ -3,7 +3,7 @@
 
 {% from "hazelcast/map.jinja" import hazelcast with context %}
 
-hazelcast-name:
-  service.running:
-    - name: {{ hazelcast.service.name }}
-    - enable: True
+hazelcast_server:
+  supervisord.running:
+    - watch:
+      - file: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}/bin/hazelcast.xml  
