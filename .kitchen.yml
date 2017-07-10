@@ -26,10 +26,6 @@ suites:
           base:
             '*':
               - hazelcast
-        hazelcast.sls:
-          hazelcast:
-            log_level: INFO
-            compression: gzip
 
 verifier:
   name: shell
