@@ -1,8 +1,10 @@
 sudo: required
 
+language: java
 
-language: ruby
-
+rvm:
+  - 2.2.5
+  
 services:
   - docker
 
