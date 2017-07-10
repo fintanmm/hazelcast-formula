@@ -1,10 +1,10 @@
 sudo: required
 
-language: java
+language: rvm
 
-rvm:
-  - 2.2.5
-  
+java:
+  - 1.8
+
 services:
   - docker
 

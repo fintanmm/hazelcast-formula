@@ -9,4 +9,3 @@ def test_config_file(host):
     hazelcast = host.file("/opt/hazelcast-3.8.2/hazelcast.conf")
     assert hazelcast.contains("5701")
     assert hazelcast.contains("NQmdgfeYYq1FfSQWR6")
-
