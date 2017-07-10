@@ -5,7 +5,7 @@
 
 {% if hazelcast.use_supervisor %}
 
-{%- salt['state.sls']('supervisor') %}
+
   
 {% else %}
 
