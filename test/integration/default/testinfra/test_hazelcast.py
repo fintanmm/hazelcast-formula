@@ -1,7 +1,6 @@
 import testinfra
 
 
-def test_service_is_running_and_enabled(Service):
-    hazelcast = Service('hazelcast')
-    assert hazelcast.is_running
-    assert hazelcast.is_enabled
+def test_is_hazelcast_downloaded(host):
+    hazelcast = host.file('/opt/hazelcast-3.8.2')
+    assert hazelcast.is_directory
