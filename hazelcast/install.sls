@@ -14,7 +14,7 @@
     - name: {{ hazelcast.user }}
     - fullname: Hazelcast user
     - shell: /bin/bash
-    - home: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
+    - home: {{ hazelcast.home }}
     - uid: 4000
     - gid: 4000
     - groups:
