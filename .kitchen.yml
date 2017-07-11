@@ -29,8 +29,8 @@ suites:
         hazelcast.sls:
           hazelcast:
             home: /opt/
-            version: '3.8.2'
-            pkg_url: http://download.hazelcast.com/download.jsp?version=hazelcast-3.8.2&type=tar&p=
+            version: '3.8.3'
+            pkg_url: http://download.hazelcast.com/download.jsp?version=hazelcast-3.8.3&type=tar&p=
             pkg_hash: 'md5=d41d8cd98f00b204e9800998ecf8427e'
             name: 'hazelcast'
             password: NQmdgfeYYq1FfSQWR6
