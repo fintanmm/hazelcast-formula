@@ -16,7 +16,7 @@
     - shell: /bin/bash
     - home: {{ hazelcast.home }}
     - uid: 4000
-    - gid: 4000
+    - gid: 7648
     - groups:
       - {{ hazelcast.group }}
 
