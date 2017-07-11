@@ -3,12 +3,12 @@
 
 {% from "hazelcast/map.jinja" import hazelcast with context %}
 
-{{ hazelcast.group }}:
+{{ hazelcast.group }}_group:
   group.present:
     - gid: 7648
     - system: True
 
-{{ hazelcast.user }}:
+{{ hazelcast.user }}_user:
   user.present:
     - fullname: Hazelcast user
     - shell: /bin/bash
