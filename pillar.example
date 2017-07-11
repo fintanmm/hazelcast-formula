@@ -7,8 +7,8 @@ hazelcast:
   password: NQmdgfeYYq1FfSQWR6
   management_url: 'http://localhost:8080/mancenter'
   port: 5701
-  user: nobody
-  group: nobody
+  user: hazelcast
+  group: hazelcast
   use_supervisor: true
   lookup: {master: hazelcast-master}
 
@@ -23,7 +23,7 @@ supervisor:
       stderr_logfile_maxbytes: '25MB'
       stdout_logfile_backups: '5'
       command:  ./start.sh
-      user: 'nobody'
+      user: 'hazelcast'
       startretries: '10'
       directory: "{{ salt['pillar.get']('hazelcast.home') }}/hazelcast-{{ salt['pillar.get']('hazelcast.version') }}/bin"
       stdout_logfile: '/var/log/hazelcast.log'
