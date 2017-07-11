@@ -5,11 +5,13 @@
 
 {{ hazelcast.group }}_group:
   group.present:
+    - name: {{ hazelcast.group }}
     - gid: 7648
     - system: True
 
 {{ hazelcast.user }}_user:
   user.present:
+    - name: {{ hazelcast.user }}
     - fullname: Hazelcast user
     - shell: /bin/bash
     - home: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
