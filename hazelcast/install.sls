@@ -25,6 +25,7 @@ extract_hazelcast:
     - name: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
     - source: {{ hazelcast.pkg_url }}
     - source_hash: {{ hazelcast.pkg_hash }}
+    - archive_format: tar
     - user: {{ hazelcast.user }}
     - group: {{ hazelcast.group }}
     - if_missing: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
