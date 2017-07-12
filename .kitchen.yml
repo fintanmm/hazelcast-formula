@@ -31,7 +31,7 @@ suites:
             home: /opt/
             version: '3.8.3'
             pkg_url: http://download.openpkg.org/components/cache/hazelcast/hazelcast-3.8.3.tar.gz
-            pkg_hash: 'md5=d41d8cd98f00b204e9800998ecf8427e'
+            pkg_hash: 'md5=67a873f0cf9c399c269762eab63d1329'
             name: 'hazelcast'
             password: NQmdgfeYYq1FfSQWR6
             management_url: 'http://localhost:8080/mancenter'
