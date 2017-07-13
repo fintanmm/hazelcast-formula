@@ -22,7 +22,7 @@
 
 extract_hazelcast:
   archive.extracted:
-    - name: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
+    - name: {{ hazelcast.home }}
     - source: {{ hazelcast.pkg_url }}
     - source_hash: '{{ hazelcast.pkg_hash }}'
     - archive_format: tar
