@@ -30,3 +30,4 @@ extract_hazelcast:
     - user: {{ hazelcast.user }}
     - group: {{ hazelcast.group }}
     - if_missing: {{ hazelcast.home }}/hazelcast-{{ hazelcast.version }}
+    - options: '--exclude="hazelcast-{{ hazelcast.version }}/code-samples/" --exclude="hazelcast-{{ hazelcast.version }}/docs/"'
