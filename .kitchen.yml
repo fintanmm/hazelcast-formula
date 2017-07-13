@@ -28,7 +28,7 @@ suites:
               - hazelcast
         hazelcast.sls:
           hazelcast:
-            home: /opt/
+            home: /opt
             version: '3.8.3'
             # packages are not from official source
             pkg_url: http://download.openpkg.org/components/cache/hazelcast/hazelcast-3.8.3.tar.gz
