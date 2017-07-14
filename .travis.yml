@@ -2,8 +2,8 @@ sudo: required
 
 language: rvm
 
-java:
-  - 1.8
+jdk: oraclejdk8
+
 
 services:
   - docker
