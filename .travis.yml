@@ -4,6 +4,8 @@ language: rvm
 
 jdk: oraclejdk8
 
+dist: trusty
+
 services:
   - docker
 
